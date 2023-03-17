@@ -180,11 +180,52 @@ galeria
   .footer a{
     font-size: x-small;
   }
-  .imgs04 img{
-    width: 50%;
-  }
-  .imgs{
-    padding: 1px 0;
-  }
+  /* .imgs04 img{
+    width: 42%;
+    gap: 0;
+    justify-content: center;
 
+  }
+  .imgblock{
+    display: block;
+
+  } */
+  .galeria-img-04{ 
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+.galeria-container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.galeria-img-01 img{
+    width: 100%;
+}
+
+.galeria-img-04{
+    display: flex;
+
+}
+.galeria-img-04 img{
+    width: 50%;
+
+}
+.galeria-img-04-02{
+    display: flex;
+
+}
+
+.galeria-img-02{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.galeria-img-02 img{
+    width: 50%;
 }
