@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula05 - Responsividade</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="https://i.pinimg.com/originals/18/8b/aa/188baa0dc5cd806741973a0f805ab9ea.png" alt="logo" class="nav-logo">
+        <div>
+            <ul class="navLinks flex">
+                <li><a href="">Home</a></li>
+                <li><a href="">Formação Academica</a></li>
+                <li><a href="">Experiência</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="text-header">
+            <h1>MEDIA QUERIES
+            </h1>
+            <h2>
+                @media (min-width: 768px)
+            </h2>
+        </div>
+        <img src="./img/imgheader02.png" alt="" class="img-header">
+
+    </header>
+
+
+    <main class="main">
+        <h2 class="h2-main">
+            O que são Media Queries?
+
+        </h2>
+        <p class="text-regular">
+            Media query, nada mais é do que uma estrutura do CSS que permite aplicar estilizações especificas para uma
+            página web de acordo com certas condições, fazendo assim com esta página possa se adequar ao layout de tela
+            em diferentes tamanhos e tipos de mídia. A sintaxe básica ao utilizarmos media query é a seguinte:
+
+        </p>
+
+
+       <p class="text-italic">
+        @media (condição) { <br>
+            /* Estilizações CSS */ <br> 
+            }
+       </p>
+
+
+       <p class="text-regular linha">
+       <span class="maiuscula-text">D</span>evemos utlizar a propriedade screen para monitores ou outros dispositivos como computadores, tablets e
+        smartphones com telas coloridas e com resolução adequada.
+    </p>
+
+     <p class="text-italic">
+         
+        @media screen and (max-width: 768px){ <br>
+            /* Estilizações CSS */ <br>
+            }
+     </p>
+
+
+
+        <h2 class="h2-main">
+            Exercício
+        </h2>
+       <p class="text-regular">
+        Neste exercício vamos trabalhar esta página em três layouts diferente, você aluno deverá observar os wireframes
+        e tentar executar os três layouts, sendo o primeiro layout para desktop, o segundo layout para tablete e o
+        último para celular. Para o tablet podemos ter como referência o tamanho máximo de 780px. E para o celular
+        podemos ter como referência o tamanho máximo de 560px.
+
+       </p>
+        <h2 class="h2-main">
+            Imagens
+        </h2>
+        <p class="text-regular text-galeria">
+            Vamos utilizar imagens para deixar bem evidete a mundaça de layout.
+        </p>
+    </main>
+     <article class="galeria">
+         <div class="imgs" >
+             <img src="./img/headerimg.jpg" alt=""class="img01" >
+         </div>
+         <div class="imgs">
+             <div class="imgs04">
+
+           
+            <img src="https://picsum.photos/300/150" alt=""class="img04" >
+            <img src="https://picsum.photos/301/150" alt=""class="img04" >
+             </div>
+         <div class="imgs04">
+            <img src="https://picsum.photos/302/150" alt=""class="img04" >
+            <img src="https://picsum.photos/303/150" alt=""class="img04" >
+          </div>
+        </div>
+        <div class="imgs">
+            
+            <img src="https://picsum.photos/401/100" alt=""class="img02" >
+            <img src="https://picsum.photos/402/100" alt=""class="img02" >
+        </div>
+     </article>
+
+    <footer class="nav footer">
+        <ul class="navLinks footer">
+            <li><a href="">Youtube</a></li>
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
