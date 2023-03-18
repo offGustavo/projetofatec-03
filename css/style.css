@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   color: var(--cor--secundaria);
-  font-family: girassol;
+  /* font-family: girassol; */
+  font-family: 'Poppins', sans-serif; 
 }
+
 :root {
   /* --cor--principal: #f7d77f;
     --cor--secundaria: #334BA3;
@@ -57,11 +59,12 @@ a:hover {
   right: 10%;
   font-size: xx-large;
 }
-.text-header h1 {
+.text-header .text-header-h1 {
   color: var(--cor--complementar04);
-  text-shadow: 1px 1px var(--cor--complemnentar03);
+  text-shadow: 2px 2px var(--cor--complemnentar03);
+  line-height: 1;
 }
-.text-header h2 {
+.text-header .text-header-h2 {
   font-size: large;
   text-align: right;
 }
@@ -102,10 +105,39 @@ a:hover {
   text-align: justify;
 }
 
+.code-text{
+    width: 550px;
+    height: 150px;
+    background-color: #290526;
+    box-shadow: 0 0 3px #290526;
+    padding: 10px;
+    margin: 10px 40px;
+    align-items: center;
+    display: flex;
+    line-height: 1.9;
+}
+.code-text .pink{
+    color: rgb(253, 50, 186);
+}
+.code-text .blue{
+    color: rgb(57, 215, 230);
+}
+.code-text .violet{
+    color: rgb(119, 4, 164);
+}
+.code-text .text-italic{
+    color: #fff;
+}
 .text-italic {
   margin: 5px 10%;
   font-style: italic;
 }
+.text-strong{
+    color: var(--cor--complemnentar03);
+    text-decoration: underline;
+
+}
+
 .text-galeria {
   font-size: xx-large;
   margin: 5px 20px;
@@ -152,21 +184,33 @@ galeria
   justify-content: end;
 }
 
-@media (max-width: 320px) {
+@media(max-width: 400px) {
   .flex {
     font-size: small;
     flex-direction: column;
     gap: 0;
   }
+
   .text-header {
     color: white;
     font-size: x-small;
+  }
+  .code-text{
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+  }
+  .code-text p{
+    font-size: 80%;
   }
   .h2-main {
     font-size: x-large;
   }
   .text-galeria {
     font-size: larger;
+  }
+  .text-headerh{
+    color: white;
   }
   .footer a {
     font-size: x-small;
@@ -212,3 +256,8 @@ galeria
 .galeria-img-02 img {
   width: 50%;
 }
+
+
+::-webkit-scrollbar{
+    width: 0px;}
+    
